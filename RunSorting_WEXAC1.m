@@ -2,8 +2,8 @@ addpath("/home/labs/rivlinlab/bndolev/matlab_files/kilosort2/CUDA/");
 addpath(genpath("/home/labs/rivlinlab/bndolev/matlab_files/NET/"))
 parpool;
 spmd(1)
-    recname1 = "28e59bf644e088626677c1628346c28d";
-    MA = MEAAnalysis('/home/labs/rivlinlab/bndolev/TestSorting/experiments_linux.xlsx');
+    recname1 = "e9f94afd777eed657b7272f8b269164e";
+    MA = MEAAnalysis('/home/labs/rivlinlab/bndolev/TestSorting2/experiment_linux2.xlsx');
     MA.setCurrentRecording(strcat('recNames=',recname1,'.bin,recFormat=binaryRecording'));
     MA.getKiloSorting;
 end

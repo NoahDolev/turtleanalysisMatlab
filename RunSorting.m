@@ -76,42 +76,42 @@
 % 
 %% Noah 191125
 
-% recname1 = "28e59bf644e088626677c1628346c28d";
-% recname2 = "e9f94afd777eed657b7272f8b269164e";
-% recname3 = "9e0210533e2f512fa24d42cdf8fda6b6";
-% recname4 = "b42c49bff23f1a75987777e9ccc114a0";
-% recname5 = "dc44cd7aa7183673b5e4aeeffa10dc5b";
-% recname6 = "8770a0ac11a01b68f2becdf368d5fbd3";
-% recname7 = "bcd67003ec781f75081c25c54c8eb414";
-% recname8 = "6208fca6e0b32f1689ca4ef478fb75dd";
-% recname9 = "1ea94e082f7ccab8df3e22d4a4730340";
-% recname10= "d8f84953da7415090d48e24d0015120a";
-% recname11 = "501d7523cf06f792d540a277690e2a29";
-% recname12 = "7080c45b2c8e87d65eeb65df41625de5";
-% recname13 = "5a2583f4fe5c79f091b5e2cbd3d515c7";
+recname1 = "28e59bf644e088626677c1628346c28d";
+recname2 = "e9f94afd777eed657b7272f8b269164e";
+recname3 = "9e0210533e2f512fa24d42cdf8fda6b6";
+recname4 = "b42c49bff23f1a75987777e9ccc114a0";
+recname5 = "dc44cd7aa7183673b5e4aeeffa10dc5b";
+recname6 = "8770a0ac11a01b68f2becdf368d5fbd3";
+recname7 = "bcd67003ec781f75081c25c54c8eb414";
+recname8 = "6208fca6e0b32f1689ca4ef478fb75dd";
+recname9 = "1ea94e082f7ccab8df3e22d4a4730340";
+recname10= "d8f84953da7415090d48e24d0015120a";
+recname11 = "501d7523cf06f792d540a277690e2a29";
+recname12 = "7080c45b2c8e87d65eeb65df41625de5";
+recname13 = "5a2583f4fe5c79f091b5e2cbd3d515c7";
 
 %% Serena 191126 type HistamineCalibration
 
- recname1 = "c31362486c6fafb5142e8bc208a15353";
- recname2 = "8837de0d52aa2ed82b251574a620a1a0";
- recname3 = "dded0d6d98f9728d3196f29025299032";
- recname4 = "8eb3d313df3b7d831254af26a18fee7c";
- recname5 = "94a6590b7d196464260974ea339235f4";
- recname6 = "b32360f2f131fd70b3f86f28fc5f479e";
- recname7 = "eb8e3e0c846032ab62802b6b901c12b2";
- recname8 = "6d8b86cdd2c3e8aa1dfaaf7b6fa3990c";
- recname9 = "cdcf074e047f9f3e9ec5446e12821c7a";
- recname10= "9d4973241b291e54137186f0834b8489";
- recname11 = "ef253c73049f88782637ab814ffa4140";
- recname12 = "4540b68daadf0a17ee5cd8491dac07a1";
- recname13 = "2d897cda7a254933befa871cf3ee2885";
- recname14 = "a3b903c46619b7c1f43221e6c5111f50";
- recname15 = "e8955ce6f4b74cd15ad5c0a086f7f17e";
+%  recname1 = "c31362486c6fafb5142e8bc208a15353";
+%  recname2 = "8837de0d52aa2ed82b251574a620a1a0";
+%  recname3 = "dded0d6d98f9728d3196f29025299032";
+%  recname4 = "8eb3d313df3b7d831254af26a18fee7c";
+%  recname5 = "94a6590b7d196464260974ea339235f4";
+%  recname6 = "b32360f2f131fd70b3f86f28fc5f479e";
+%  recname7 = "eb8e3e0c846032ab62802b6b901c12b2";
+%  recname8 = "6d8b86cdd2c3e8aa1dfaaf7b6fa3990c";
+%  recname9 = "cdcf074e047f9f3e9ec5446e12821c7a";
+%  recname10= "9d4973241b291e54137186f0834b8489";
+%  recname11 = "ef253c73049f88782637ab814ffa4140";
+%  recname12 = "4540b68daadf0a17ee5cd8491dac07a1";
+%  recname13 = "2d897cda7a254933befa871cf3ee2885";
+%  recname14 = "a3b903c46619b7c1f43221e6c5111f50";
+%  recname15 = "e8955ce6f4b74cd15ad5c0a086f7f17e";
 
 
 %%
 
-MA = MEAAnalysis('\\data.wexac.weizmann.ac.il\\rivlinlab-arc\\h5s\\experiments.xlsx');
+MA = MEAAnalysis('/Volumes/rivlinlab/bndolev/matlab_files/experiments_linux.xlsx');
 MA.setCurrentRecording(strcat('recNames=',...
                               recname1,'.h5&',...
                               recname2,'.h5&', ...
@@ -125,10 +125,8 @@ MA.setCurrentRecording(strcat('recNames=',...
                               recname10,'.h5&',...
                               recname11,'.h5&',...
                               recname12,'.h5&',...
-                              recname13,'.h5&',...
-                              recname14,'.h5&',...
-                              recname15,'.h5'));  % recname1,'.h5&',...
-copyfile("\\data.wexac.weizmann.ac.il\rivlinlab-arc\h5s\layout.chMap", strcat("\\data.wexac.weizmann.ac.il\rivlinlab-arc\h5s\",recname1))
+                              recname13,'.h5'));  % recname1,'.h5&',...
+copyfile("/Volumes/rivlinlab-arc/h5s/layout.chMap", strcat("/Volumes/rivlinlab-arc/h5s/",recname1))
 MA.currentDataObj.export2Binary;
 MA.currentDataObj.convertLayoutKSort;
 % templayout = MA.currentDataObj.layoutName;
@@ -140,11 +138,11 @@ MA.getKiloSorting;
 MA.getJRClust;
 
 %% Manually Sort with Phy:
-pathdir = strcat("\\data.wexac.weizmann.ac.il\rivlinlab-arc\h5s\", recname1,"\wexac_sorting_1\");
-pathdir = strcat("\\data.wexac.weizmann.ac.il\rivlinlab-arc\h5s\", recname1,"\wexac_sorting_2\");
-pathdir = strcat("\\data.wexac.weizmann.ac.il\rivlinlab-arc\h5s\", recname1,"\original_windows_sorting\");
-pathdir = strcat("\\data.wexac.weizmann.ac.il\rivlinlab-arc\h5s\", recname1,"\new_windows_sorting\");
-pathdir = strcat("\\data.wexac.weizmann.ac.il\rivlinlab-arc\h5s\", recname1,"\");
+pathdir = strcat("/Volumes/rivlinlab-arc/h5s/", recname1,"/wexac_sorting_1/");
+pathdir = strcat("/Volumes/rivlinlab-arc/h5s/", recname1,"/wexac_sorting_2/");
+pathdir = strcat("/Volumes/rivlinlab-arc/h5s/", recname1,"/original_windows_sorting/");
+pathdir = strcat("/Volumes/rivlinlab-arc/h5s/", recname1,"/new_windows_sorting/");
+pathdir = strcat("/Volumes/rivlinlab-arc/h5s/", recname1,"/");
 system(strcat("cmd /K ", """C:\Users\bndolev\AppData\Local\Continuum\anaconda3\Scripts\activate.bat C:\Users\bndolev\AppData\Local\Continuum\anaconda3 & phy template-gui ", pathdir,"params.py"""))
 
 % Load results of Phy Sorting
